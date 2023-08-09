@@ -2,22 +2,20 @@
 using namespace std;
 
 
-int factorial(int n)
+int square(int n)
 {
-	if(n==1||n==0)//base case
-	{
-		return 1;
-	}
 	
-	int resultfact=factorial(n-1);
-	int result=n*resultfact;
+	
+	
+	int result=n*n;
 	
 	return result;
 }
+
 int main()
 {
 	int n;
 	cin>>n;
 	
-	cout<<factorial(n);
+	cout<<square(n);
 }
